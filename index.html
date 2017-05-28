@@ -1,0 +1,155 @@
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+	<script src="master-head.js"></script>
+	<center>
+		<title>Luigi's Website</title>
+        <img src="/con.png"></img>
+	</center>
+	<style>
+		.counter{
+		background-color:white;
+		color:limegreen;
+		font-weight:bold;
+		}
+html,body {
+  background: url(back.gif) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;
+overflow-x: hidden;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+	</style>
+
+</head>
+<body>
+
+	<script src="master-body.js"></script>
+
+	<center>
+		<h2>
+        </h2>
+        <p style="color:white">
+       		You have visited this page 
+			<SCRIPT>
+			page_counter(jcount);
+			</SCRIPT>
+			times.
+		</p>
+ 		<input type="text" size="7" id="clock" readonly="true" title="click this to toggle the graph at the bottom of the page" style="position:absolute;top:0;right:0;" onclick="hihi()">
+
+			<a style="color:white" href="http://luigiptardis.site90.com/">Home</a> <br />
+<a style="color:white" href="http://luigiptardis.site90.com/lite/">Lite Homepage</a> <br />
+			<a style="color:white" href="http://luigiptardis.site90.com/graph/">DHT11 Graph</a> <br />
+			<a style="color:white" href="http://luigiptardis.site90.com/minipad/">MiniPad</a> <br />
+	    	<a style="color:white" href="http://luigiptardis.site90.com/Doctor/">Doctor Dogems</a> <br />
+			<a style="color:white" href="http://luigiptardis.site90.com/tinyenigma/">Tiny Enigma</a> <br />
+<a style="color:white" href="http://luigiptardis.site90.com/battleships/">Battleships</a> <br />
+			<a style="color:white" href="http://luigiptardis.site90.com/lightsout/">Lights Out</a> <br />
+			<a style="color:white" href="http://luigiptardis.site90.com/livingbutton/">Living Button</a> <br />
+<a href="https://www.youtube.com/channel/UCFTK6NUQOksSUrMA0FvvtZA">
+
+<script>
+
+/*
+RAINBOW TEXT Script by Matt Hedgecoe (c) 2002
+Featured on JavaScript Kit
+For this script, visit http://www.javascriptkit.com
+*/
+
+// ********** MAKE YOUR CHANGES HERE
+
+var text="TARDIS Redstone" // YOUR TEXT
+var speed=80 // SPEED OF FADE
+
+// ********** LEAVE THE NEXT BIT ALONE!
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script>
+</a>
+<br />
+<br />
+
+<p id="load" style="display:inline; color:white">Loading...</p>
+		<div id="chart" style="width: 100%;"></div>
+<script>
+var L=0;
+function hihi()
+  {
+  if(L==0){
+  document.getElementById("chart").style.display = "inline";
+  L++;
+  }
+
+  else{
+  document.getElementById("chart").style.display = "none";
+  L--;
+  }}
+</script>
+	</center>
+
+</body>
+
+</html>
